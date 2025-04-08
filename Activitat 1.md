@@ -6,7 +6,32 @@ També hem de fer un tutorial a Github i una demostració a clase de com fer-ho.
 
 Les maquines virtuals han de fer ping entre elles, per poder fer això li hem de posar la IP 192.168.15.100 a la maquina Linux i la IP 192.168.15.10 a la maquina Windows.
 
-## Instal·lem el CUPS i impressora PDF virtual
+## Instal·lar i configurar Samba
+
+```sudo apt install samba```
+
+Entrem a la configuració de Samba
+
+```sudo nano /etc/samba/smb.conf```
+
+Afegim aquestes linies
+
+```
+[printers]
+comment = Impresoras compartidas
+path = /var/spool/samba
+browseable = yes
+guest ok = yes
+writable = no
+printable = yes
+use client driver = yes
+```
+
+Ara hem de reiniciar Samba
+
+```sudo systemctl restart smbd```
+
+## Instal·lar CUPS i els drivers
 ```
 sudo apt update
 ```
@@ -19,6 +44,33 @@ sudo apt install cups
 sudo apt install printer-driver-cups-pdf
 ```
 ![image](https://github.com/user-attachments/assets/7472e0f3-f0f7-4208-8891-2ef154013940)
+
+Entrem a la configuració de CUPS
+
+```sudo nano /etc/cups/cupsd.conf```
+
+Afegim aquestes linies (si no les tenim)
+```
+# Permitir acceso desde otros equipos
+Listen 0.0.0.0:631
+Listen [::]:631
+
+# Permitir acceso a la configuración de CUPS desde cualquier IP de la red
+<Location />
+  Order allow,deny
+  Allow @LOCAL
+</Location>
+
+<Location /admin>
+  Order allow,deny
+  Allow @LOCAL
+</Location>
+
+<Location /printers>
+  Order allow,deny
+  Allow @LOCAL
+</Location>
+```
 
 ## Compartim la impressora amb el CUPS
 
