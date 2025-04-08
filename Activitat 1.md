@@ -8,11 +8,16 @@ Les maquines virtuals han de fer ping entre elles, per poder fer això li hem de
 
 ## Instal·lar i configurar Samba
 
-```sudo apt install samba```
+Instal·lem Samba
+```
+sudo apt install samba
+```
 
 Entrem a la configuració de Samba
 
-```sudo nano /etc/samba/smb.conf```
+```
+sudo nano /etc/samba/smb.conf
+```
 
 Afegim aquestes linies
 
@@ -29,7 +34,9 @@ use client driver = yes
 
 Ara hem de reiniciar Samba
 
-```sudo systemctl restart smbd```
+```
+sudo systemctl restart smbd
+```
 
 ## Instal·lar CUPS i els drivers
 ```
