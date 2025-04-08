@@ -12,7 +12,7 @@ sudo apt update
 ```
 ![image](https://github.com/user-attachments/assets/5c468399-7780-4532-a362-1e6b5756e94f)
 ```
-sudo apt instal cups
+sudo apt install cups
 ```
 ![image](https://github.com/user-attachments/assets/2ac7d778-8657-4ba3-8605-5d713d451e19)
 ```
