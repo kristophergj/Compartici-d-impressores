@@ -16,7 +16,7 @@ sudo apt instal cups
 
 ![image](https://github.com/user-attachments/assets/2ac7d778-8657-4ba3-8605-5d713d451e19)
 
-sudo apt install printer-driver-cups-pdf
+!sudo apt install printer-driver-cups-pdf
 
 ![image](https://github.com/user-attachments/assets/7472e0f3-f0f7-4208-8891-2ef154013940)
 
