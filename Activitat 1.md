@@ -7,17 +7,17 @@ També hem de fer un tutorial a Github i una demostració a clase de com fer-ho.
 Les maquines virtuals han de fer ping entre elles, per poder fer això li hem de posar la IP 192.168.15.100 a la maquina Linux i la IP 192.168.15.10 a la maquina Windows.
 
 ## Instal·lem el CUPS i impressora PDF virtual
-
+```
 sudo apt update
-
+```
 ![image](https://github.com/user-attachments/assets/5c468399-7780-4532-a362-1e6b5756e94f)
-```bash
+```
 sudo apt instal cups
-
+```
 ![image](https://github.com/user-attachments/assets/2ac7d778-8657-4ba3-8605-5d713d451e19)
-
+```
 sudo apt install printer-driver-cups-pdf
-
+```
 ![image](https://github.com/user-attachments/assets/7472e0f3-f0f7-4208-8891-2ef154013940)
 
 ## Compartim la impressora amb el CUPS
