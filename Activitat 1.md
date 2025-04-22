@@ -54,7 +54,9 @@ sudo apt install printer-driver-cups-pdf
 
 Entrem a la configuració de CUPS
 
-```sudo nano /etc/cups/cupsd.conf```
+```
+sudo nano /etc/cups/cupsd.conf
+```
 
 Afegim aquestes linies (si no les tenim)
 ```
