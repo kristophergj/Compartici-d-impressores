@@ -27,7 +27,7 @@ comment = Impresoras compartidas
 path = /var/spool/samba
 browseable = yes
 guest ok = yes
-writable = no
+writable = yes
 printable = yes
 use client driver = yes
 ```
