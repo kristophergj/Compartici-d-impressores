@@ -110,5 +110,9 @@ Ara hem d'afegir els controladors anomenats Generic i el model Generic CUPS-PDF 
 
 ![image](https://github.com/user-attachments/assets/72b3bfdb-8823-439a-b52a-ca761ff55198)
 
+Ara en la màquina Windows hem d'anar a panell de control i a dispositius i impressores, després has d'escollir la impressora de "virtual PDF Printer"
 
+![image](https://github.com/user-attachments/assets/f2ba64f8-85a8-44cb-b7d5-28caf34ec7b3)
+
+![image](https://github.com/user-attachments/assets/b45555f3-18fc-4df5-af7e-741fce96754b)
 
